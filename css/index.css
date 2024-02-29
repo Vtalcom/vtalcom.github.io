@@ -7,57 +7,78 @@ body {
 .fl {
   display: flex;
   margin-top: 30px;
-  justify-content: center;
-  align-items: center;
   margin-bottom: 20px;
+  justify-content: space-around;
+  align-items: center;
+flex-wrap: wrap;
+
 }
 .me {
-  width: 50%;
+
   text-align: center;
-  font-size: 180%;
+  font-size: 150%;
   word-spacing: 0.3em;
   font-weight: 500;
+  margin-left: 10%;
 }
 .fotome {
-  width: 50%;
+  margin-right: 10%;
+  margin-left: 10%;
 }
+
+@media (max-width: 431px) {
+  .fototel {
+    width: 250px;
+    border-radius: 15px;
+  }
+}
+
+@media (min-width: 432px) {
+.fototel {
+  width: 500px;
+  border-radius: 15px;
+}
+}
+
+
+
 nav ul {
   display: flex;
   margin-top: 20px;
   padding: 0;
   justify-content: center;
-}
+  flex-wrap: wrap;
+  }
 nav li {
   list-style: none;
   font-size: 18px;
   font-weight: 300;
   font-style: normal;
+  margin-left: 25px;
 }
 nav a {
   text-decoration: none;
-  margin-right: 40px;
+  margin-right: 0px;
   color: black;
 }
 
 nav ul a:hover {
   text-decoration: underline;
-  margin-right: 40px;
+  margin-right: 0px;
   color: black;
 }
 
 h2 {
-  font-size: 33px;
+  font-size: 24px;
   font-weight: 500;
   font-style: normal;
   text-align: center;
-  word-spacing: 1em;
-  letter-spacing: 1em;
+  word-spacing: 0.8em;
+  letter-spacing: 0.8em;
+  margin-left: 20px;
+
 }
-img[alt="myphoto"] {
-  width: 67%;
-  align-items: center;
-  border-radius: 15px;
-}
+
 
 h3 {
   font-size: 30px;
@@ -114,12 +135,28 @@ button:hover {
 .animation {
   animation: color-change 2s;
 }
-img[alt="myphoto1"] {
-  width: 90%;
-  border-radius: 15px;
+
+
+.flat {
+  display: flex;
+  justify-content: space-around;
+flex-wrap: wrap;
 }
 
 .fotome2 {
-  margin-left: 10%;
-  justify-content: space-around;
+
 }
+
+
+@media (max-width:431px) {
+img[alt="myphoto1"] {
+  width: 250px;
+    border-radius: 15px;
+    }
+  }
+  @media (min-width:432px) {
+    img[alt="myphoto1"] {
+      width: 330px;
+        border-radius: 15px;
+        }
+      }
